@@ -18,6 +18,8 @@ Nesse projeto é usado o framework NextJS que é um case usado por algumas das m
 ## 🃏 Layout
 Caso tenha interesse em visualizar o Layout temos [o link do figma](https://www.figma.com/file/oCjfMWlVgRXEFaPcUOgadt/devstore-%E2%80%A2-Projeto-React?type=design&node-id=0%3A1&mode=design&t=Xm6X68YzQfq5nyzJ-1).
 
+![image](https://github.com/Azanniel/devstore/assets/71537090/5a19a303-e87e-41b4-b67f-ea1be0f483a3)
+
 ## 📃 Anotações importantes
 
 **1. Rotas, Layouts e Grupos**
