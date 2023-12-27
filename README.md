@@ -39,6 +39,18 @@ Para utilizar a geração estática, podemos exportar uma função chamada gener
 
 A Memoização é uma funcionalidade do React que evita requisições duplicadas durante o carregamento de uma página. Quando usamos Server Components, o React automaticamente impede que uma requisição seja feita mais de uma vez. No entanto, a Memoização não se aplica a requisições feitas em páginas diferentes. Para evitar requisições duplicadas em páginas diferentes, é necessário utilizar o Cache. O Next.js possui propriedades para controle de Cache, como a opção force-cache, que permite cachear uma requisição, e a opção no-store, que impede o cache. Além disso, há a opção revalidate, que define um tempo em segundos para atualizar o cache da requisição.
 
+**4. Cypress (E2E)**
+
+Os testes end-to-end simulam a navegação de um usuário na aplicação, testando a interface e as ações que um usuário comum faria. Utilizamos o Cypress, uma ferramenta open source muito popular para testes end-to-end. Apesar de existir o Playwright como alternativa, vamos focar no Cypress devido à sua maior adoção no mercado.
+
+Os testes end-to-end garantem que o comportamento da aplicação se mantenha conforme novas features são adicionadas.
+
+**5. Cypress (E2E) - Fixtures**
+
+As fixtures no Cypress geralmente são arquivos JSON, YAML ou mesmo texto simples que contêm dados necessários para a execução dos testes. Esses dados podem incluir informações como entradas de formulário, dados de autenticação, respostas de API simuladas, entre outros.
+
+Ao usar fixtures, você pode separar os dados de teste do código de teste em si, tornando seus testes mais flexíveis e fáceis de manter. Isso é especialmente útil quando você precisa testar vários cenários ou quando os dados de teste são extensos e complexos.
+
 ## ☕ Contatos
 
 Você vai me encontrar em qualquer uma das redes sociais abaixo:
