@@ -36,10 +36,10 @@ jobs:
       - name: Setup Cypress cache
         uses: actions/cache@v3
         with:
-          path: ~/.cache
+          path: |
+            ~/.cache/Cypress
+            ./cypress/videos
           key: ${{ runner.os }}-cypress-installation-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-cypress-installation-
               
       - name: Install dependencies
         run: pnpm install
