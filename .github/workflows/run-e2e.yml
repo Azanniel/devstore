@@ -32,9 +32,6 @@ jobs:
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
-              
-      - name: Install dependencies
-        run: pnpm install
 
       - name: Setup Cypress cache
         uses: actions/cache@v3
@@ -43,6 +40,9 @@ jobs:
           key: ${{ runner.os }}-cypress-installation-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-cypress-installation-
+              
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Cypress run
         uses: cypress-io/github-action@v6
